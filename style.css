@@ -1,0 +1,31 @@
+#obj1{
+    transform: rotate(-20deg);
+}
+
+#obj2{
+    transform: skew(400deg);
+}
+
+#obj3{
+    transform: scale(1.5,0.4);
+}
+
+#obj4{
+    transform: translate(180px);
+}
+
+.box3d{
+    perspective: 300px;
+}
+
+#obj5{
+    transform:rotateX(120deg)
+}  
+
+#obj6{
+    transform:rotateY(160deg)
+}  
+
+#obj7{
+    transform:rotateZ(50deg)
+}  
