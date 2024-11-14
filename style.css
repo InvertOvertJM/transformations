@@ -1,31 +1,94 @@
-#obj1{
-    transform: rotate(-20deg);
-}
-
-#obj2{
-    transform: skew(400deg);
-}
-
-#obj3{
-    transform: scale(1.5,0.4);
-}
-
-#obj4{
-    transform: translate(180px);
-}
-
-.box3d{
+.box3d {
     perspective: 300px;
 }
 
-#obj5{
-    transform:rotateX(120deg)
-}  
+#obj1 {
+    animation: rotateObj1 2s infinite;
+}
 
-#obj6{
-    transform:rotateY(160deg)
-}  
+@keyframes rotateObj1 {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
 
-#obj7{
-    transform:rotateZ(50deg)
-}  
+#obj2 {
+    animation: skewObj2 2s infinite;
+}
+
+@keyframes skewObj2 {
+    from {
+        transform: skew(400deg);
+    }
+    to {
+        transform: skew(0deg);
+    }
+}
+
+#obj3 {
+    animation: scaleObj3 2s infinite;
+}
+
+@keyframes scaleObj3 {
+    from {
+        transform: scale(1.5, 0.4);
+    }
+    to {
+        transform: scale(0.5, 1.2);
+    }
+}
+
+#obj4 {
+    animation: translateObj4 2s infinite;
+}
+
+@keyframes translateObj4 {
+    from {
+        transform: translate(180px);
+    }
+    to {
+        transform: translate(-180px);
+    }
+}
+
+#obj5 {
+    animation: rotateXObj5 2s infinite;
+}
+
+@keyframes rotateXObj5 {
+    from {
+        transform: rotateX(120deg);
+    }
+    to {
+        transform: rotateX(-120deg);
+    }
+}
+
+#obj6 {
+    animation: rotateYObj6 2s infinite;
+}
+
+@keyframes rotateYObj6 {
+    from {
+        transform: rotateY(160deg);
+    }
+    to {
+        transform: rotateY(-160deg);
+    }
+}
+
+#obj7 {
+    animation: rotateZObj7 2s infinite;
+}
+
+@keyframes rotateZObj7 {
+    from {
+        transform: rotateZ(50deg);
+    }
+    to {
+        transform: rotateZ(-50deg);
+    }
+}
